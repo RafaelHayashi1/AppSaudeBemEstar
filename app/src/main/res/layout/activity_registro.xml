@@ -9,18 +9,33 @@
         android:id="@+id/textViewTitle"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="AppSaudeBemEstar"
+        android:text="Registrar"
         android:textSize="32sp"
         android:textColor="#FFFFFF"
         android:layout_marginTop="64dp"
-        android:layout_centerHorizontal="true"/> <!-- Colocar algum nome dps -->
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/editTextName"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/textViewTitle"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint=" Nome"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_person_24"
+        android:inputType="text"/>
 
     <EditText
         android:id="@+id/editTextEmail"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_below="@id/textViewTitle"
-        android:layout_marginTop="48dp"
+        android:layout_below="@id/editTextName"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/edit_text_background"
@@ -45,31 +60,46 @@
         android:drawableLeft="@drawable/baseline_lock_24"
         android:inputType="textPassword"/>
 
-    <Button
-        android:id="@+id/buttonLogin"
+    <EditText
+        android:id="@+id/editTextPhone"
         android:layout_width="match_parent"
         android:layout_height="48dp"
         android:layout_below="@id/editTextPassword"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="16dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
-        android:background="@drawable/button_background"
-        android:text="Entrar"
-        />
+        android:background="@drawable/edit_text_background"
+        android:hint="Telefone"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_phone_android_24"
+        android:inputType="phone"/>
 
+    <EditText
+        android:id="@+id/editTextAddress"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_below="@id/editTextPhone"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginEnd="32dp"
+        android:background="@drawable/edit_text_background"
+        android:hint=" Endereço"
+        android:textColor="@color/white"
+        android:textColorHint="@color/white"
+        android:drawableLeft="@drawable/baseline_house_24"
+        android:inputType="text"/>
 
     <Button
         android:id="@+id/buttonRegister"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:layout_below="@id/buttonLogin"
-        android:layout_marginTop="16dp"
+        android:layout_below="@id/editTextAddress"
+        android:layout_marginTop="24dp"
         android:layout_marginStart="32dp"
         android:layout_marginEnd="32dp"
         android:background="@drawable/button_background"
         android:text="Cadastrar"
         android:textColor="#FFFFFF"/>
-
-
 
 </RelativeLayout>
