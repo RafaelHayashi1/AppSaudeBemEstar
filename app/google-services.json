@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "889451907368",
+    "firebase_url": "https://appsaudebemestar-default-rtdb.firebaseio.com",
+    "project_id": "appsaudebemestar",
+    "storage_bucket": "appsaudebemestar.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:889451907368:android:3ea3dddaf6b5667b8a681d",
+        "android_client_info": {
+          "package_name": "com.example.appsaudebemestar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBkkejqCXajcNWS0xjA2VmNE2koT7AhwdU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

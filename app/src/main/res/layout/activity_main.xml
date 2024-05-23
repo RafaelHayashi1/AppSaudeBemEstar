@@ -6,70 +6,44 @@
     android:background="@drawable/background">
 
     <TextView
-        android:id="@+id/textViewTitle"
+        android:id="@+id/textViewAppName"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="AppSaudeBemEstar"
         android:textSize="32sp"
         android:textColor="#FFFFFF"
-        android:layout_marginTop="64dp"
-        android:layout_centerHorizontal="true"/> <!-- Colocar algum nome dps -->
+        android:layout_marginBottom="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="64dp"/>
 
-    <EditText
-        android:id="@+id/editTextEmail"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@id/textViewTitle"
-        android:layout_marginTop="48dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edit_text_background"
-        android:hint=" E-mail"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
+    <Button
+        android:id="@+id/buttonLoginWithEmail"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/button_background"
         android:drawableLeft="@drawable/baseline_email_24"
-        android:inputType="textEmailAddress"/>
+        android:onClick="intentLogin"
+        android:text="Entrar com E-mail"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
 
-    <EditText
-        android:id="@+id/editTextPassword"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@id/editTextEmail"
-        android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/edit_text_background"
-        android:hint=" Senha"
-        android:textColor="@color/white"
-        android:textColorHint="@color/white"
-        android:drawableLeft="@drawable/baseline_lock_24"
-        android:inputType="textPassword"/>
-
-    <Button
-        android:id="@+id/buttonLogin"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@id/editTextPassword"
-        android:layout_marginTop="32dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:background="@drawable/button_background"
-        android:text="Entrar"
-        />
+    <!-- Fazer botao para acessar pelo gmail dps -->
 
 
     <Button
-        android:id="@+id/buttonRegister"
-        android:layout_width="match_parent"
-        android:layout_height="48dp"
-        android:layout_below="@id/buttonLogin"
+        android:id="@+id/buttonCreateAccount"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_below="@id/buttonLoginWithEmail"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
-        android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
         android:background="@drawable/button_background"
-        android:text="Cadastrar"
-        android:textColor="#FFFFFF"/>
-
-
-
+        android:text="Criar uma Conta"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp"
+        android:drawableLeft="@drawable/baseline_app_registration_24"
+        android:onClick="intentRegistro"/>
 </RelativeLayout>

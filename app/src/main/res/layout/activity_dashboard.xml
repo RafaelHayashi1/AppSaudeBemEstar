@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dashboard"
+        android:textSize="32sp"
+        android:textColor="#FFFFFF"
+        android:layout_marginTop="64dp"
+        android:layout_centerHorizontal="true"/>
+
+    <!-- Ícone do menu lateral -->
+    <ImageView
+        android:id="@+id/imageViewMenu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:contentDescription="Menu"
+        android:onClick="toggleMenu"
+        android:src="@drawable/baseline_house_24" />
+
+
+
+    <!-- Menu lateral -->
+    <LinearLayout
+        android:id="@+id/menuLayout"
+        android:layout_width="250dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="start"
+        android:background="@drawable/menu_background"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <!-- Opções do menu -->
+        <TextView
+            android:id="@+id/textViewCloseMenu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:drawableStart="@drawable/baseline_house_24"
+            android:drawablePadding="8dp"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="toggleMenu"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Perfil"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="openProfile"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Alimentação"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="openFood"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercícios"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="openExercise"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Marcar Avaliação"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="scheduleAssessment"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Contato Profissional"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="contactProfessional"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Dados Pessoais"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="personalData"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sair"
+            android:padding="16dp"
+            android:textColor="#FFFFFF"
+            android:onClick="logout"/>
+    </LinearLayout>
+
+
+</RelativeLayout>
