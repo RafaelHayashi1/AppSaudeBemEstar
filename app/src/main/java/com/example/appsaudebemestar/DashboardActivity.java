@@ -1,9 +1,12 @@
 package com.example.appsaudebemestar;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 public class DashboardActivity extends AppCompatActivity {
 
@@ -26,6 +29,15 @@ public class DashboardActivity extends AppCompatActivity {
             menuLayout.setVisibility(View.VISIBLE);
             isMenuOpen = true;
         }
+    }
+
+    private void logout() {
+
+        Intent intent = new Intent(this, LoginActivity.class);
+        startActivity(intent);
+        finish(); //
+
+        Toast.makeText(this, "Você saiu da sua conta", Toast.LENGTH_SHORT).show();
     }
 
 
