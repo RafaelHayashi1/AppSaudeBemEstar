@@ -56,14 +56,14 @@
             android:text="Perfil"
             android:padding="16dp"
             android:textColor="#FFFFFF"
-            android:onClick="openProfile"/>
+            android:onClick="abrirPerfil"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Alimentação"
             android:padding="16dp"
             android:textColor="#FFFFFF"
-            android:onClick="openFood"/>
+            android:onClick="abrirAlimentacao"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -91,7 +91,7 @@
             android:text="Dados Pessoais"
             android:padding="16dp"
             android:textColor="#FFFFFF"
-            android:onClick="personalData"/>
+            android:onClick="abrirDados"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"

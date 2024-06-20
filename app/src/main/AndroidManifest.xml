@@ -13,6 +13,15 @@
         android:theme="@style/Theme.AppSaudeBemEstar"
         tools:targetApi="31">
         <activity
+            android:name=".DadosAcitivity"
+            android:exported="false" />
+        <activity
+            android:name=".AlimentacaoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".PerfilAcitivty"
+            android:exported="false" />
+        <activity
             android:name=".DashboardActivity"
             android:exported="false" />
         <activity

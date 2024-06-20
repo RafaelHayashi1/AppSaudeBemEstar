@@ -31,6 +31,22 @@ public class DashboardActivity extends AppCompatActivity {
         }
     }
 
+
+    public void abrirPerfil(View view) {
+        Intent intent = new Intent(this, PerfilAcitivty.class);
+        startActivity(intent);
+    }
+
+    public void abrirAlimentacao(View view) {
+        Intent intent = new Intent(this, AlimentacaoActivity.class);
+        startActivity(intent);
+    }
+
+    public void abrirDados(View view) {
+        Intent intent = new Intent(this, DadosAcitivity.class);
+        startActivity(intent);
+    }
+
     private void logout() {
 
         Intent intent = new Intent(this, LoginActivity.class);
